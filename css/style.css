@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121417;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.container {
+  padding: 0 3%;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 410px;
+  background: radial-gradient(circle at top, #252d37, rgba(37, 45, 55, 0.85), rgba(37, 45, 55, 0.65), rgba(37, 45, 55, 0.45));
+  border-radius: 28px;
+}
+
+.card-container-1 {
+  padding: 29px 37px 29px 29px;
+}
+
+.card-container-1 .star {
+  margin-bottom: 35px;
+  width: 47px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(124, 135, 152, 0.1);
+  border-radius: 100%;
+}
+
+.card-container-1 h1 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: 0.3px;
+  color: white;
+}
+
+.card-container-1 p {
+  margin-bottom: 28px;
+  line-height: 1.6;
+  color: #959eac;
+}
+
+.card-container-1 .rating-wrap {
+  margin-bottom: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container-1 .rating-wrap .rating-item {
+  width: 51px;
+  height: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(124, 135, 152, 0.1);
+  border-radius: 100%;
+  color: #959eac;
+  cursor: pointer;
+}
+
+.card-container-1 .rating-wrap .rating-item:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: #fb7413;
+  color: white;
+}
+
+.card-container-1 .rating-wrap .active {
+  background-color: #7c8798;
+  color: white;
+}
+
+.card-container-1 .sumbit-btn {
+  width: 100%;
+  height: 45px;
+  background-color: #fb7413;
+  border: none;
+  border-radius: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+}
+
+.card-container-1 .sumbit-btn:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: white;
+  color: #fb7413;
+}
+
+.card-container-2 {
+  padding: 43px 35px 50px 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container-2 .img-thank-you {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container-2 .selection {
+  margin-bottom: 34px;
+  width: 195px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(124, 135, 152, 0.1);
+  border-radius: 28px;
+  color: #fb7413;
+}
+
+.card-container-2 h2 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 28px;
+  color: white;
+}
+
+.card-container-2 p {
+  text-align: center;
+  line-height: 1.6;
+  color: #959eac;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  padding: 0 6%;
+  word-spacing: 4px;
+  text-align: center;
+  font-size: 11px;
+  color: white;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 0 6%;
+  }
+  .card {
+    min-width: 295px;
+  }
+  .card-container-1 {
+    padding: 25px 25px 29px 25px;
+  }
+  .card-container-1 .star {
+    margin-bottom: 7px;
+    width: 45px;
+    height: 45px;
+  }
+  .card-container-1 h1 {
+    font-size: 24px;
+  }
+  .card-container-1 p {
+    font-size: 14px;
+  }
+  .card-container-1 .rating-wrap .rating-item {
+    width: 45px;
+    height: 45px;
+  }
+  .card-container-1 .sumbit-btn {
+    height: 43px;
+  }
+  .card-container-2 {
+    padding: 35px 24px 40px 20px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 14px;
+  }
+}

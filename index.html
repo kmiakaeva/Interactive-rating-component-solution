@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Inter rating component</title>
+
+    <!-- Normalize-min -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <!-- Rating state start -->
+
+        <div class="card-container-1">
+          <div class="star">
+            <img src="img/icon-star.svg" alt="icon star" />
+          </div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="rating-wrap rating">
+            <div class="rating-item">1</div>
+            <div class="rating-item">2</div>
+            <div class="rating-item">3</div>
+            <div class="rating-item">4</div>
+            <div class="rating-item active">5</div>
+          </div>
+          <button class="sumbit-btn">submit</button>
+        </div>
+
+        <!-- Rating state end -->
+
+        <!-- Thank you state start -->
+
+        <div class="card-container-2 hidden">
+          <div class="img-thank-you">
+            <img
+              src="img/illustration-thank-you.svg"
+              alt="illustration thank you"
+            />
+          </div>
+          <div class="selection">
+            <div>You selected <span class="user-score">4</span> out of 5</div>
+          </div>
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+
+        <!-- Thank you state end -->
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/kris-mkv">Kristina Miakaeva</a>.
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
